@@ -1,7 +1,8 @@
 import { Container, Grid } from "@mui/material";
-
 import DrawerAppBar from "./components/DrawerAppBar";
 import InputAmount from "./components/InputAmount";
+import SelectCurrency from "./components/SelectCurrency";
+import ButtonSwitchCurrency from "./components/ButtonSwitchCurrency";
 
 export default function App() {
   const containerStyles = {
@@ -17,6 +18,9 @@ export default function App() {
 
       <Grid container>
         <InputAmount />
+        <SelectCurrency label="De" value="BRL" setValue={() => ""} />
+        <ButtonSwitchCurrency />
+        <SelectCurrency label="Para" value="USD" setValue={() => ""} />
       </Grid>
     </Container>
   );
