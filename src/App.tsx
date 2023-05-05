@@ -1,7 +1,7 @@
-import { Container, Typography } from "@mui/material";
-
+import { Container } from "@mui/material";
 import DrawerAppBar from "./components/DrawerAppBar";
 import Main from "./components/Main";
+import Footer from "./components/Footer";
 
 export default function App() {
   const containerStyles = {
@@ -15,7 +15,7 @@ export default function App() {
     <Container maxWidth={false} disableGutters sx={containerStyles}>
       <DrawerAppBar />
       <Main />
-      <Typography>Footer</Typography>
+      <Footer />
     </Container>
   );
 }
