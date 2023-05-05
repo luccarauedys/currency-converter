@@ -1,12 +1,15 @@
+import { useContext } from "react";
 import { Button, Grid } from "@mui/material";
+import { CurrencyContext } from "../contexts/CurrencyContext";
 import SwapVerticalCircleIcon from "@mui/icons-material/SwapVerticalCircle";
 
 export default function ButtonSwitchCurrency() {
-  // TODO: Pegar fromCurrency, setFromCurrency, toCurrency e setToCurrency do contexto.
+  const { fromCurrency, setFromCurrency, toCurrency, setToCurrency } =
+    useContext(CurrencyContext);
 
   const handleSwitch = () => {
-    // setFromCurrency(toCurrency);
-    // setToCurrency(fromCurrency);
+    setFromCurrency(toCurrency);
+    setToCurrency(fromCurrency);
   };
 
   const buttonStyles = {
