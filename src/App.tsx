@@ -1,9 +1,17 @@
-import { Container, Typography } from "@mui/material";
+import { Container } from "@mui/material";
+import DrawerAppBar from "./components/DrawerAppBar";
 
 export default function App() {
+  const containerStyles = {
+    minHeight: "100vh",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+  };
+
   return (
-    <Container>
-      <Typography variant="h1">XE Currency</Typography>
+    <Container maxWidth={false} disableGutters sx={containerStyles}>
+      <DrawerAppBar />
     </Container>
   );
 }
