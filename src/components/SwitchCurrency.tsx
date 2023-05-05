@@ -3,7 +3,7 @@ import { Button, Grid } from "@mui/material";
 import { CurrencyContext } from "../contexts/CurrencyContext";
 import SwapVerticalCircleIcon from "@mui/icons-material/SwapVerticalCircle";
 
-export default function ButtonSwitchCurrency() {
+export default function SwitchCurrency() {
   const { fromCurrency, setFromCurrency, toCurrency, setToCurrency } =
     useContext(CurrencyContext);
 
