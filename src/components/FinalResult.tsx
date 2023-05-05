@@ -13,7 +13,7 @@ export default function FinalResult() {
 
   return (
     <Box>
-      <Typography sx={{ fontSize: "2rem", fontWeight: "500" }}>
+      <Typography sx={{ fontSize: "1.8rem", fontWeight: "600" }}>
         {amount} {fromCurrencyCode} = {convertedValue.toFixed(2)}{" "}
         {toCurrencyCode}
       </Typography>
