@@ -1,5 +1,7 @@
-import { Container } from "@mui/material";
+import { Container, Grid } from "@mui/material";
+
 import DrawerAppBar from "./components/DrawerAppBar";
+import InputAmount from "./components/InputAmount";
 
 export default function App() {
   const containerStyles = {
@@ -12,6 +14,10 @@ export default function App() {
   return (
     <Container maxWidth={false} disableGutters sx={containerStyles}>
       <DrawerAppBar />
+
+      <Grid container>
+        <InputAmount />
+      </Grid>
     </Container>
   );
 }
